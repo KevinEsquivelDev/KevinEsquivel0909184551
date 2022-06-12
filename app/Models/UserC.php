@@ -21,7 +21,7 @@ use Illuminate\Database\Eloquent\Model;
  * @mixin \Illuminate\Database\Eloquent\Builder
  */
 
-class UserC extends Model
+class Userx extends Model
 {
 
     static $rules = [

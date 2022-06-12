@@ -21,9 +21,9 @@ class EmpleadoController extends Controller
     public function index()
     {
         $empleados = Empleado::paginate();
-        $var = User::pluck('name','id');
+        $var2 = User::pluck('name','id');
 
-        return view('empleado.index', compact('empleados','var'))
+        return view('empleado.index', compact('empleados','var2'))
             ->with('i', (request()->input('page', 1) - 1) * $empleados->perPage());
     }
 
