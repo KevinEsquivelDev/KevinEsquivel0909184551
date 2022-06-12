@@ -13,15 +13,16 @@ class RegistroDeEmpleados extends Migration
      */
     public function up()
     {
-        Schema::create('registro_de_empleados', function (Blueprint $table) {
+        Schema::create('empleados', function (Blueprint $table) {
             $table->engine = "InnoDB";
-            $table->bigIncrements("codigo_empleado");
+            $table->bigIncrements("id");
 
             $table->bigInteger('id_usuario')->unsigned();
 
-            $table->string('nombre_empleado');
-            $table->string('numero_telefono');
-            $table->string('correo');
+            $table->string('nombre_empleado',45);
+            $table->string('numero_telefono',8);
+            $table->string('correo',45);
+            $table->string('direccion', 100);
             $table->string('departamento', 100);
 
             $table->rememberToken();
@@ -38,6 +39,6 @@ class RegistroDeEmpleados extends Migration
      */
     public function down()
     {
-        chema::dropIfExists('registro_de_empleados');
+        chema::dropIfExists('empleados');
     }
 }

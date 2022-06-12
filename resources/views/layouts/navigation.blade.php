@@ -6,14 +6,14 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
+                        <img src="https://mspasgt.online/aurora/logo.png" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Archivo:Google logo (2010-2013).svg - Wikipedia, la enciclopedia libre" data-noaft="1" style="width: 35px; height: 35px; margin: 5px 0px;">
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                    <x-nav-link : href="{{ route('empleados.index') }}">
+                        {{ __('Empleados') }}
                     </x-nav-link>
                 </div>
             </div>

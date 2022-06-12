@@ -2,7 +2,7 @@
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                <img src="https://umg.edu.gt/miumg/sesion_files/logo_white.png" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Mi UMG | Universidad Mariano Gálvez de Guatemala" data-noaft="1" style="width: 380px; height: 250px; margin: 0px;"> </a>
             </a>
         </x-slot>
 
